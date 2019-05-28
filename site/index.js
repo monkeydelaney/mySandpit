@@ -1,3 +1,13 @@
+
+  var bgg = require('bgg')(options);
+  
+  bgg('user', {name: 'monteslu', guilds: 1})
+    .then(function(results){
+      console.log(results);
+    });
+
+
+
 if (jQuery) {
     console.log("JQuery loaded")
 } else console.log ("No JQuery Loaded")
@@ -37,12 +47,12 @@ $("h1").click(function(){
     alert("h1 clicked");
 })
 
-/*
+
 //add click listener to a collection
 $("button").click(function(){
     alert("button clicked");
 });
-*/
+
 //$("button").click((event) => {alert("button clicked")});
 
 /*
@@ -51,6 +61,8 @@ $("button").click((event) => {
     */
 
 //add click listener to a collection
+
+
 $("button").click(function(){
     $(this).css("background", "pink");
     var text = $(this).text();
@@ -90,3 +102,4 @@ $("button").on("click", function() {
         console.log("sliding");
     });
 });
+
